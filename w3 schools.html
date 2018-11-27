@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>W3Schools</title>
+</head>
+
+<body style="background-image:url('')">
+    <top-left>
+        <img src="" alt="" width="">
+    </top-left>
+    <h1 style="color:blueviolet;font-size:25px;text-align:center">W3 Schools Courses</h1> <br>
+    <br>
+
+    <form style="color:blueviolet;font-size:15px;font-family:Georgia;text-align:center">
+        Courses Offered:
+        <select id="list" onchange="getValue();">
+                         <option value="PHP">PHP</option>
+                         <option value="HTML">HTML</option>
+                         <option value="CSS">CSS</option>
+                         <option value="SQL Developer">SQL Developer</option>
+                      </select> <br> <br>
+    </form>
+    <div id="result">
+        <p id="PHP">
+            PHP is a server side scripting language designed for web development, but also used as genereal purpose programming language.PHP code may be embedded into HTML code or it can be used in combination with various web template systems,web content management
+            systems, and web frameworks. PHP code is usually processed by a PHP interpreter implemented as a module in the web server or as a Common Gateway Interface (CGI) executable.
+        </p>
+        <p id="HTML">
+            Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web browsers receive HTML documents
+            from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+        </p>
+        <p id="CSS">
+            Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript. CSS is designed to
+            enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple
+            web pages to share formatting by specifying he relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content.
+        </p>
+        <p id="SQL Developer">
+            Oracle SQL Developer is a free, integrated development environment that simplifies the development and management of Oracle Database in both traditional and Cloud deployments. SQL Developer offers complete end-to-end development ofyour PL/SQL applications,
+            a worksheet for running queries and scripts, a DBA console for managing the database, a reports interface, a complete data modeling solution, and a migration platform for moving your 3rd party databases to Oracle.
+        </p>
+    </div>
+    <script type="text/javascript">
+        function getValue() {
+            var getValue = document.getElementById("list").value;
+            var result = document.getElementById("result");
+
+        }
+    </script>
+</body>
+
+</html>
